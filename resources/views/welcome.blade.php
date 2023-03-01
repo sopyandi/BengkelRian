@@ -1,144 +1,574 @@
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="description" content="HTTrack is an easy-to-use website mirror utility. It allows you to download a World Wide website from the Internet to a local directory,building recursively all structures, getting html, images, and other files from the server to your computer. Links are rebuiltrelatively so that you can freely browse to the local site (works with any browser). You can mirror several sites together so that you can jump from one toanother. You can, also, update an existing mirror site, or resume an interrupted download. The robot is fully configurable, with an integrated help" />
-	<meta name="keywords" content="httrack, HTTRACK, HTTrack, winhttrack, WINHTTRACK, WinHTTrack, offline browser, web mirror utility, aspirateur web, surf offline, web capture, www mirror utility, browse offline, local  site builder, website mirroring, aspirateur www, internet grabber, capture de site web, internet tool, hors connexion, unix, dos, windows 95, windows 98, solaris, ibm580, AIX 4.0, HTS, HTGet, web aspirator, web aspirateur, libre, GPL, GNU, free software" />
-	<title>Local index - HTTrack Website Copier</title>
-  <!-- Mirror and index made by HTTrack Website Copier/3.49-2 [XR&CO'2014] -->
-	<style type="text/css">
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+	<title>Mexant - Financial HTML5 Template</title>
+
+	<!-- Bootstrap core CSS -->
+	<link href="landing/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+	<!-- Additional CSS Files -->
+	<link rel="stylesheet" href="landing/assets/css/fontawesome.css">
+	<link rel="stylesheet" href="landing/assets/css/templatemo-574-mexant.css">
+	<link rel="stylesheet" href="landing/assets/css/owl.css">
+	<link rel="stylesheet" href="landing/assets/css/animate.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
 	<!--
 
-body {
-	margin: 0;  padding: 0;  margin-bottom: 15px;  margin-top: 8px;
-	background: #77b;
-}
-body, td {
-	font: 14px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
-	}
+TemplateMo 574 Mexant
 
-#subTitle {
-	background: #000;  color: #fff;  padding: 4px;  font-weight: bold;
-	}
+https://templatemo.com/tm-574-mexant
 
-#siteNavigation a, #siteNavigation .current {
-	font-weight: bold;  color: #448;
-	}
-#siteNavigation a:link    { text-decoration: none; }
-#siteNavigation a:visited { text-decoration: none; }
-
-#siteNavigation .current { background-color: #ccd; }
-
-#siteNavigation a:hover   { text-decoration: none;  background-color: #fff;  color: #000; }
-#siteNavigation a:active  { text-decoration: none;  background-color: #ccc; }
-
-
-a:link    { text-decoration: underline;  color: #00f; }
-a:visited { text-decoration: underline;  color: #000; }
-a:hover   { text-decoration: underline;  color: #c00; }
-a:active  { text-decoration: underline; }
-
-#pageContent {
-	clear: both;
-	border-bottom: 6px solid #000;
-	padding: 10px;  padding-top: 20px;
-	line-height: 1.65em;
-	background-image: url(backblue.gif);
-	background-repeat: no-repeat;
-	background-position: top right;
-	}
-
-#pageContent, #siteNavigation {
-	background-color: #ccd;
-	}
-
-
-.imgLeft  { float: left;   margin-right: 10px;  margin-bottom: 10px; }
-.imgRight { float: right;  margin-left: 10px;   margin-bottom: 10px; }
-
-hr { height: 1px;  color: #000;  background-color: #000;  margin-bottom: 15px; }
-
-h1 { margin: 0;  font-weight: bold;  font-size: 2em; }
-h2 { margin: 0;  font-weight: bold;  font-size: 1.6em; }
-h3 { margin: 0;  font-weight: bold;  font-size: 1.3em; }
-h4 { margin: 0;  font-weight: bold;  font-size: 1.18em; }
-
-.blak { background-color: #000; }
-.hide { display: none; }
-.tableWidth { min-width: 400px; }
-
-.tblRegular       { border-collapse: collapse; }
-.tblRegular td    { padding: 6px;  background-image: url(fade.gif);  border: 2px solid #99c; }
-.tblHeaderColor, .tblHeaderColor td { background: #99c; }
-.tblNoBorder td   { border: 0; }
-
-
-// -->
-</style>
-
+-->
 </head>
 
-<table width="76%" border="0" align="center" cellspacing="0" cellpadding="3" class="tableWidth">
-	<tr>
-	<td id="subTitle">HTTrack Website Copier - Open Source offline browser</td>
-	</tr>
-</table>
-<table width="76%" border="0" align="center" cellspacing="0" cellpadding="0" class="tableWidth">
-<tr class="blak">
-<td>
-	<table width="100%" border="0" align="center" cellspacing="1" cellpadding="0">
-	<tr>
-	<td colspan="6">
-		<table width="100%" border="0" align="center" cellspacing="0" cellpadding="10">
-		<tr>
-		<td id="pageContent">
-<!-- ==================== End prologue ==================== -->
-
-	<meta name="generator" content="HTTrack Website Copier/3.x">
-	<TITLE>Local index - HTTrack</TITLE>
-</HEAD>
-<BODY>
-<H1 ALIGN=Center>Index of locally available sites:</H1>
-	<TABLE BORDER="0" WIDTH="100%" CELLSPACING="1" CELLPADDING="0">
-		<TR>
-			<TD BACKGROUND="fade.gif">
-				&middot;
-					<A HREF="montir.id/index.html">
-						MONTIR - Ganti Aki, Ganti Oli, General Check Up, dan Tune Up Mobil di Rumah Anda
-					</A>
-			</TD>
-		</TR>
-	</TABLE>
-	<BR>
-	<BR>
-	<BR>
-  	<H6 ALIGN="RIGHT">
-	<I>Mirror and index made by HTTrack Website Copier [XR&amp;CO'2008]</I>
-	</H6>
-	<!-- Mirror and index made by HTTrack Website Copier/3.49-2 [XR&CO'2014] -->
-	<!-- Thanks for using HTTrack Website Copier! -->
-	<meta HTTP-EQUIV="Refresh" CONTENT="0; URL=montir.id/index.html">
+<body>
 
 
-<!-- ==================== Start epilogue ==================== -->
-		</td>
-		</tr>
-		</table>
-	</td>
-	</tr>
-	</table>
-</td>
-</tr>
-</table>
+	<!-- ***** Header Area Start ***** -->
+	<header class="header-area header-sticky">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<nav class="main-nav">
+						<!-- ***** Logo Start ***** -->
+						<a href="index.html" class="logo">
+							<img src="landing/assets/images/logo.png" alt="">
+						</a>
+						<!-- ***** Logo End ***** -->
+						<!-- ***** Menu Start ***** -->
+						<ul class="nav">
+							<li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
+							<li class="scroll-to-section"><a href="#services">Services</a></li>
+							<li class="scroll-to-section"><a href="#about">About</a></li>
+							<li class="has-sub">
+								<a href="javascript:void(0)">Pages</a>
+								<ul class="sub-menu">
+									<li><a href="about-us.html">About Us</a></li>
+									<li><a href="our-services.html">Our Services</a></li>
+									<li><a href="contact-us.html">Contact Us</a></li>
+								</ul>
+							</li>
+							<li class="scroll-to-section"><a href="#testimonials">Testimonials</a></li>
+							<li><a href="dashboard/login.html">Login Or Register</a></li>
+						</ul>
+						<a class='menu-trigger'>
+							<span>Menu</span>
+						</a>
+						<!-- ***** Menu End ***** -->
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- ***** Header Area End ***** -->
 
-<table width="76%" border="0" align="center" valign="bottom" cellspacing="0" cellpadding="0">
-	<tr>
-	<td id="footer"><small>&copy; 2008 Xavier Roche & other contributors - Web Design: Leto Kauler.</small></td>
-	</tr>
-</table>
+	<!-- ***** Main Banner Area Start ***** -->
+	<div class="swiper-container" id="top">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide">
+				<div class="slide-inner" style="background-image:url(landing/assets/images/foto1.jpg)">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-8">
+								<div class="header-text">
+									<br><br>
+									<h2>Get <em>ready</em> for your business<br>&amp; upgrade <em>all aspects</em></h2>
+									<div class="div-dec"></div>
+									<p>Mexant HTML5 Template is provided for free of charge. This layout is based on Boostrap 5 CSS framework. Anyone can download and edit for any professional website. Thank you for visiting TemplateMo website.</p>
+									<div class="buttons">
+										<div class="green-button">
+											<a href="#">Discover More</a>
+										</div>
+										<div class="orange-button">
+											<a href="#">Contact Us</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="slide-inner" style="background-image:url(landing/assets/images/foto2.jpg)">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-8">
+								<div class="header-text">
+									<br><br><br>
+									<h2><em>Digital</em> Currency for you <br>&amp; Best <em>Crypto</em> Tips</h2>
+									<div class="div-dec"></div>
+									<p>You will see a bunch of free CSS templates when you search on Google. TemplateMo website is probably the best one because it is 100% free. It does not ask you anything in return. You have a total freedom to use any template for any purpose.</p>
+									<div class="buttons">
+										<div class="green-button">
+											<a href="#">Discover More</a>
+										</div>
+										<div class="orange-button">
+											<a href="#">Contact Us</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="slide-inner" style="background-image:url(landing/assets/images/foto3.jpg)">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-8">
+								<div class="header-text">
+									<h2>Best One in Town<br>&amp; Crypto <em>Services</em></h2>
+									<div class="div-dec"></div>
+									<p>When you browse through different tags on TemplateMo website, you can see a variety of CSS templates which are responsive website designs for different individual needs. Please tell your friends about our website. Thank you.</p>
+									<div class="buttons">
+										<div class="green-button">
+											<a href="#">Discover More</a>
+										</div>
+										<div class="orange-button">
+											<a href="#">Contact Us</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="swiper-button-next swiper-button-white"></div>
+		<div class="swiper-button-prev swiper-button-white"></div>
+	</div>
 
+	<!-- ***** Main Banner Area End ***** -->
+
+	<section class="services" id="services">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="service-item">
+						<i class="fas fa-archive"></i>
+						<h4>CSS Templates</h4>
+						<p>TemplateMo website is the best for you to explore and download free website templates.</p>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="service-item">
+						<i class="fas fa-cloud"></i>
+						<h4>HTML5 Web Pages</h4>
+						<p>Templates are based on Bootstrap 5 CSS framework. You can easily adapt or modify based on your needs.</p>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="service-item">
+						<i class="fas fa-charging-station"></i>
+						<h4>Responsive Designs</h4>
+						<p>All of our CSS templates are 100% free to use for commercial or business websites.</p>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="service-item">
+						<i class="fas fa-suitcase"></i>
+						<h4>Mobile and Tablet ready!</h4>
+						<p>Our HTML CSS templates are well-tested on mobile, tablet, and desktop compatibility.</p>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="service-item">
+						<i class="fas fa-archway"></i>
+						<h4>Fast Customer Support</h4>
+						<p>Do not be hesitated to contact us if you have any question or concern about our templates.</p>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="service-item">
+						<i class="fas fa-puzzle-piece"></i>
+						<h4>Fully Customizable</h4>
+						<p>If you have any idea or suggestion about new templates, feel free to let us know.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="simple-cta">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-5">
+					<h4>Business <em>Solutions</em> and <strong>Crypto</strong> Investments</h4>
+				</div>
+				<div class="col-lg-7">
+					<div class="buttons">
+						<div class="green-button">
+							<a href="#">Discover More</a>
+						</div>
+						<div class="orange-button">
+							<a href="#">Contact Us</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="about-us" id="about">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 offset-lg-3">
+					<div class="section-heading">
+						<h6>About Us</h6>
+						<h4>Know Us Better</h4>
+					</div>
+				</div>
+				<div class="col-lg-8">
+					<div class="naccs">
+						<div class="tabs">
+							<div class="row">
+								<div class="col-lg-12">
+									<div class="menu">
+										<div class="active gradient-border"><span>Web Design</span></div>
+										<div class="gradient-border"><span>Graphics</span></div>
+										<div class="gradient-border"><span>Web Coding</span></div>
+									</div>
+								</div>
+								<div class="col-lg-12">
+									<ul class="nacc">
+										<li class="active">
+											<div>
+												<div class="main-list">
+													<span class="title">Project Title</span>
+													<span class="title">Budget</span>
+													<span class="title">Deadline</span>
+													<span class="title">Client</span>
+												</div>
+												<div class="list-item">
+													<span class="item item-title">Website Redesign</span>
+													<span class="item">$1,500 to $2,200</span>
+													<span class="item">2022 Dec 12</span>
+													<span class="item">Web Biz</span>
+												</div>
+												<div class="list-item">
+													<span class="item item-title">Website Renovation</span>
+													<span class="item">$2,500 to $3,600</span>
+													<span class="item">2022 Dec 10</span>
+													<span class="item">Online Ads</span>
+												</div>
+												<div class="list-item">
+													<span class="item item-title">Marketing Plan</span>
+													<span class="item">$2,500 to $4,200</span>
+													<span class="item">2022 Dec 8</span>
+													<span class="item">Web Biz</span>
+												</div>
+												<div class="list-item last-item">
+													<span class="item item-title">All-new Website</span>
+													<span class="item">$3,000 to $6,600</span>
+													<span class="item">2022 Dec 2</span>
+													<span class="item">Web Presence</span>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div>
+												<div class="main-list">
+													<span class="title">Project Title</span>
+													<span class="title">Budget</span>
+													<span class="title">Deadline</span>
+													<span class="title">Client</span>
+												</div>
+												<div class="list-item">
+													<span class="item item-title">Graphics Redesign</span>
+													<span class="item">$500 to $800</span>
+													<span class="item">2022 Nov 24</span>
+													<span class="item">Media One</span>
+												</div>
+												<div class="list-item">
+													<span class="item item-title">Digital Graphics</span>
+													<span class="item">$1,500 to $3,000</span>
+													<span class="item">2022 Nov 18</span>
+													<span class="item">Second Media</span>
+												</div>
+												<div class="list-item">
+													<span class="item item-title">New Artworks</span>
+													<span class="item">$2,200 to $4,400</span>
+													<span class="item">2022 Nov 10</span>
+													<span class="item">Artwork Push</span>
+												</div>
+												<div class="list-item last-item">
+													<span class="item item-title">Complex Arts</span>
+													<span class="item">$1,100 to $2,400</span>
+													<span class="item">2022 Nov 3</span>
+													<span class="item">Media One</span>
+												</div>
+										</li>
+										<li>
+											<div>
+												<div class="main-list">
+													<span class="title">Project Title</span>
+													<span class="title">Budget</span>
+													<span class="title">Estimated</span>
+													<span class="title">Technology</span>
+												</div>
+												<div class="list-item">
+													<span class="item item-title">Backend Coding</span>
+													<span class="item">$2,000 to $5,000</span>
+													<span class="item">2022 Nov 28</span>
+													<span class="item">PHP MySQL</span>
+												</div>
+												<div class="list-item">
+													<span class="item item-title">New Web App</span>
+													<span class="item">$1,500 to $3,000</span>
+													<span class="item">2022 Nov 18</span>
+													<span class="item">Python Programming</span>
+												</div>
+												<div class="list-item">
+													<span class="item item-title">Frontend Interactions</span>
+													<span class="item">$3,000 to $6,000</span>
+													<span class="item">2022 Nov 10</span>
+													<span class="item">JavaScripts</span>
+												</div>
+												<div class="list-item last-item">
+													<span class="item item-title">Video Creations</span>
+													<span class="item">$1,800 to $4,400</span>
+													<span class="item">2022 Nov 3</span>
+													<span class="item">Multimedia</span>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="right-content">
+						<h4>Please tell us about your idea and how you want it to be</h4>
+						<p>You are allowed to use this template for your websites. You are <b>NOT allowed</b> to redistribute the template ZIP file on any other template websites.<br><br>Thank you for downloading and using our templates. Please tell your friends about our website.</p>
+						<div class="green-button">
+							<a href="about-us.html">Discover More</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="calculator">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-7">
+					<div class="left-image">
+						<img src="landing/assets/images/calculator-image.png" alt="">
+					</div>
+				</div>
+				<div class="col-lg-5">
+					<div class="section-heading">
+						<h6>Your Freedom</h6>
+						<h4>Get a Financial Plan</h4>
+					</div>
+					<form id="calculate" action="" method="get">
+						<div class="row">
+							<div class="col-lg-6">
+								<fieldset>
+									<label for="name">Your Name</label>
+									<input type="name" name="name" id="name" placeholder="" autocomplete="on" required>
+								</fieldset>
+							</div>
+							<div class="col-lg-6">
+								<fieldset>
+									<label for="email">Your Email</label>
+									<input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="" required="">
+								</fieldset>
+							</div>
+							<div class="col-lg-12">
+								<fieldset>
+									<label for="subject">Subject</label>
+									<input type="subject" name="subject" id="subject" placeholder="" autocomplete="on">
+								</fieldset>
+							</div>
+							<div class="col-lg-12">
+								<fieldset>
+									<label for="chooseOption" class="form-label">Your Reason</label>
+									<select name="Category" class="form-select" aria-label="Default select example" id="chooseOption" onchange="this.form.click()">
+										<option selected>Choose an Option</option>
+										<option type="checkbox" name="option1" value="Online Banking">Online Banking</option>
+										<option value="Financial Control">Financial Control</option>
+										<option value="Yearly Profit">Yearly Profit</option>
+										<option value="Crypto Investment">Crypto Investment</option>
+									</select>
+								</fieldset>
+							</div>
+							<div class="col-lg-12">
+								<fieldset>
+									<button type="submit" id="form-submit" class="orange-button">Submit Now</button>
+								</fieldset>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="testimonials" id="testimonials">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 offset-lg-3">
+					<div class="section-heading">
+						<h6>Testimonials</h6>
+						<h4>What They Say</h4>
+					</div>
+				</div>
+				<div class="col-lg-10 offset-lg-1">
+					<div class="owl-testimonials owl-carousel" style="position: relative; z-index: 5;">
+						<div class="item">
+							<i class="fa fa-quote-left"></i>
+							<p>“Donec et nunc massa. Nullam non felis dignissim, dapibus turpis semper, vulputate lorem. Nam volutpat posuere tellus, in porttitor justo interdum nec. Aenean in dapibus risus, in euismod ligula. Aliquam vel scelerisque elit.”</p>
+							<h4>David Eigenberg</h4>
+							<span>CEO of Mexant</span>
+							<div class="right-image">
+								<img src="landing/assets/images/testimonials-01.jpg" alt="">
+							</div>
+						</div>
+						<div class="item">
+							<i class="fa fa-quote-left"></i>
+							<p>“Etiam id ligula risus. Fusce fringilla nisl nunc, nec rutrum lectus cursus nec. In blandit nibh dolor, at rutrum leo accumsan porta. Nullam pulvinar eros porttitor risus condimentum tempus.”</p>
+							<h4>Andrew Garfield</h4>
+							<span>CTO of Mexant</span>
+							<div class="right-image">
+								<img src="landing/assets/images/testimonials-01.jpg" alt="">
+							</div>
+						</div>
+						<div class="item">
+							<i class="fa fa-quote-left"></i>
+							<p>“Ut dictum vehicula massa, ac pharetra leo tincidunt eu. Phasellus in tristique magna, ac gravida leo. Integer sed lorem sapien. Ut viverra mauris sed lobortis commodo.”</p>
+							<h4>George Lopez</h4>
+							<span>Crypto Manager</span>
+							<div class="right-image">
+								<img src="landing/assets/images/testimonials-01.jpg" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="partners">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-2 col-sm-4 col-6">
+					<div class="item">
+						<img src="landing/assets/images/client-01.png" alt="">
+					</div>
+				</div>
+				<div class="col-lg-2 col-sm-4 col-6">
+					<div class="item">
+						<img src="landing/assets/images/client-01.png" alt="">
+					</div>
+				</div>
+				<div class="col-lg-2 col-sm-4 col-6">
+					<div class="item">
+						<img src="landing/assets/images/client-01.png" alt="">
+					</div>
+				</div>
+				<div class="col-lg-2 col-sm-4 col-6">
+					<div class="item">
+						<img src="landing/assets/images/client-01.png" alt="">
+					</div>
+				</div>
+				<div class="col-lg-2 col-sm-4 col-6">
+					<div class="item">
+						<img src="landing/assets/images/client-01.png" alt="">
+					</div>
+				</div>
+				<div class="col-lg-2 col-sm-4 col-6">
+					<div class="item">
+						<img src="landing/assets/images/client-01.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<p>Copyright © 2022 Mexant Co., Ltd. All Rights Reserved.
+
+						<br>Designed by <a title="CSS Templates" rel="sponsored" href="https://templatemo.com" target="_blank">TemplateMo</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Scripts -->
+	<!-- Bootstrap core JavaScript -->
+	<script src="landing/vendor/jquery/jquery.min.js"></script>
+	<script src="landing/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+	<script src="landing/assets/js/isotope.min.js"></script>
+	<script src="landing/assets/js/owl-carousel.js"></script>
+
+	<script src="landing/assets/js/tabs.js"></script>
+	<script src="landing/assets/js/swiper.js"></script>
+	<script src="landing/assets/js/custom.js"></script>
+	<script>
+		var interleaveOffset = 0.5;
+
+		var swiperOptions = {
+			loop: true,
+			speed: 1000,
+			grabCursor: true,
+			watchSlidesProgress: true,
+			mousewheelControl: true,
+			keyboardControl: true,
+			navigation: {
+				nextEl: ".swiper-button-next",
+				prevEl: ".swiper-button-prev"
+			},
+			on: {
+				progress: function() {
+					var swiper = this;
+					for (var i = 0; i < swiper.slides.length; i++) {
+						var slideProgress = swiper.slides[i].progress;
+						var innerOffset = swiper.width * interleaveOffset;
+						var innerTranslate = slideProgress * innerOffset;
+						swiper.slides[i].querySelector(".slide-inner").style.transform =
+							"translate3d(" + innerTranslate + "px, 0, 0)";
+					}
+				},
+				touchStart: function() {
+					var swiper = this;
+					for (var i = 0; i < swiper.slides.length; i++) {
+						swiper.slides[i].style.transition = "";
+					}
+				},
+				setTransition: function(speed) {
+					var swiper = this;
+					for (var i = 0; i < swiper.slides.length; i++) {
+						swiper.slides[i].style.transition = speed + "ms";
+						swiper.slides[i].querySelector(".slide-inner").style.transition =
+							speed + "ms";
+					}
+				}
+			}
+		};
+
+		var swiper = new Swiper(".swiper-container", swiperOptions);
+	</script>
 </body>
 
 </html>
-
-

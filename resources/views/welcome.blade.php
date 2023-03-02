@@ -58,7 +58,7 @@ https://templatemo.com/tm-574-mexant
 								</ul>
 							</li>
 							<li class="scroll-to-section"><a href="#testimonials">Testimonials</a></li>
-							<li><a href="dashboard/login.html">Login Or Register</a></li>
+							<li><a href="/signin">Login Or Register</a></li>
 						</ul>
 						<a class='menu-trigger'>
 							<span>Menu</span>

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\DashboardController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
 
@@ -17,13 +18,7 @@ use App\Http\Controllers\LoginController;
 Route::get('/', function () {
     return view('welcome');
 });
-// Route::get('/signin', function () {
-//     return view('login');
-// });
-Route::get('/dashboard', function () {
-    return view('dashboard/dashboard');
-});
-
+route::get('/dashboard', [DashboardController::class, 'index']);
 route::controller(LoginController::class)->group(function () {
     Route::get('/signin', 'halaman');
     Route::post('/auth', 'login');

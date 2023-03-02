@@ -18,9 +18,9 @@
     <section class="ftco-section">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-md-6 text-center mb-5">
+                <!-- <div class="col-md-6 text-center mb-5">
                     <h2 class="heading-section">Login #08</h2>
-                </div>
+                </div> -->
             </div>
             <div class="row justify-content-center">
                 <div class="col-md-6 col-lg-5">
@@ -29,12 +29,13 @@
                             <span class="fa fa-user-o"></span>
                         </div>
                         <h3 class="text-center mb-4">Have an account?</h3>
-                        <form action="#" class="login-form">
+                        <form method="Post" action="/auth" class="login-form">
+                            @csrf
                             <div class="form-group">
-                                <input type="text" class="form-control rounded-left" placeholder="Username" required>
+                                <input type="text" name="username" class="form-control rounded-left" placeholder="Username" required>
                             </div>
                             <div class="form-group d-flex">
-                                <input type="password" class="form-control rounded-left" placeholder="Password" required>
+                                <input type="password" name="password" class="form-control rounded-left" placeholder="Password" required>
                             </div>
                             <div class="form-group d-md-flex">
                                 <div class="w-50">

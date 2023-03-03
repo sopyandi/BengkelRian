@@ -45,6 +45,7 @@
                 <img src="assets/img/logo-ct-dark.png" class="navbar-brand-img h-100" alt="main_logo">
                 <span class="ms-1 font-weight-bold">{{Auth()->user()->level}}</span>
             </a>
+
         </div>
         <hr class="horizontal dark mt-0">
         <div class="collapse navbar-collapse  w-auto " id="sidenav-collapse-main">
@@ -70,7 +71,7 @@
                         <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
                             <i class="ni ni-credit-card text-success text-sm opacity-10"></i>
                         </div>
-                        <span class="nav-link-text ms-1">Jenis Kerusakan</span>
+                        <span class="nav-link-text ms-1">Billing</span>
                     </a>
                 </li>
                 <li class="nav-item">
@@ -78,7 +79,7 @@
                         <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
                             <i class="ni ni-app text-info text-sm opacity-10"></i>
                         </div>
-                        <span class="nav-link-text ms-1">Entri Status Perbaikan</span>
+                        <span class="nav-link-text ms-1">Virtual Reality</span>
                     </a>
                 </li>
                 <li class="nav-item">
@@ -86,7 +87,7 @@
                         <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
                             <i class="ni ni-world-2 text-danger text-sm opacity-10"></i>
                         </div>
-                        <span class="nav-link-text ms-1">Laporan Perbaikan</span>
+                        <span class="nav-link-text ms-1">RTL</span>
                     </a>
                 </li>
                 <li class="nav-item mt-3">
@@ -139,7 +140,7 @@
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb bg-transparent mb-0 pb-0 pt-1 px-0 me-sm-6 me-5">
                         <li class="breadcrumb-item text-sm"><a class="opacity-5 text-white" href="javascript:;">Pages</a></li>
-                        <li class="breadcrumb-item text-sm text-white active" aria-current="page">Dashboard</li>
+                        <li class="breadcrumb-item text-sm text-white active" ari   a-current="page">Dashboard</li>
                     </ol>
                     <h6 class="font-weight-bolder text-white mb-0">Dashboard</h6>
                 </nav>
@@ -258,7 +259,7 @@
         <!-- End Navbar -->
         <div class="container-fluid py-4">
             <div class="row">
-                <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
+                {{-- <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
                     <div class="card">
                         <div class="card-body p-3">
                             <div class="row">
@@ -282,7 +283,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> --}}
                 <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
                     <div class="card">
                         <div class="card-body p-3">
@@ -380,7 +381,7 @@
                         <div id="carouselExampleCaptions" class="carousel slide h-100" data-bs-ride="carousel">
                             <div class="carousel-inner border-radius-lg h-100">
                                 <div class="carousel-item h-100 active" style="background-image: url('assets/img/carousel-1.jpg');
-      background-size: cover;">
+                    background-size: cover;">
                                     <div class="carousel-caption d-none d-md-block bottom-0 text-start start-0 ms-5">
                                         <div class="icon icon-shape icon-sm bg-white text-center border-radius-md mb-3">
                                             <i class="ni ni-camera-compact text-dark opacity-10"></i>
@@ -390,7 +391,7 @@
                                     </div>
                                 </div>
                                 <div class="carousel-item h-100" style="background-image: url('assets/img/carousel-2.jpg');
-      background-size: cover;">
+                  background-size: cover;">
                                     <div class="carousel-caption d-none d-md-block bottom-0 text-start start-0 ms-5">
                                         <div class="icon icon-shape icon-sm bg-white text-center border-radius-md mb-3">
                                             <i class="ni ni-bulb-61 text-dark opacity-10"></i>
@@ -400,7 +401,7 @@
                                     </div>
                                 </div>
                                 <div class="carousel-item h-100" style="background-image: url('assets/img/carousel-3.jpg');
-      background-size: cover;">
+        background-size: cover;">
                                     <div class="carousel-caption d-none d-md-block bottom-0 text-start start-0 ms-5">
                                         <div class="icon icon-shape icon-sm bg-white text-center border-radius-md mb-3">
                                             <i class="ni ni-trophy text-dark opacity-10"></i>
@@ -423,7 +424,7 @@
                 </div>
             </div>
             <div class="row mt-4">
-                <div class="col-lg-7 mb-lg-0 mb-4">
+                {{-- <div class="col-lg-7 mb-lg-0 mb-4">
                     <div class="card ">
                         <div class="card-header pb-0 p-3">
                             <div class="d-flex justify-content-between">
@@ -561,8 +562,8 @@
                             </table>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-5">
+                </div> --}}
+                {{-- <div class="col-lg-5">
                     <div class="card">
                         <div class="card-header pb-0 p-3">
                             <h6 class="mb-0">Categories</h6>
@@ -628,7 +629,7 @@
                             </ul>
                         </div>
                     </div>
-                </div>
+                </div> --}}
             </div>
             <footer class="footer pt-3  ">
                 <div class="container-fluid">

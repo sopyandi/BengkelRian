@@ -12,6 +12,16 @@ class LoginController extends Controller
     {
         return view('login');
     }
+    public function logout(Request $req)
+    {
+    Auth::logout();
+    request()->session()->regenerateToken();
+    return redirect('/signin');
+    }
+    public function register()
+    {
+        return view('register');
+    }
     public function login(Request $data)
     {
         //    return $data->all();
@@ -22,6 +32,9 @@ class LoginController extends Controller
         //    $datalogin['password'] = bcrypt($datalogin['password']);
         if (Auth::attempt($datalogin)) {
             $data->session()->regenerate();
+            if(Auth::user()->level == 'admin'){
+            return redirect()->intended('/admin');
+            }
             return redirect()->intended('/dashboard');
         }
         return back();

@@ -13,13 +13,13 @@ return new class extends Migration
     {
         Schema::create('members', function (Blueprint $table) {
             $table->id('idmember');
-            $table->string('nama', 45);
-            $table->string('nohp', 12);
-            $table->string('email', 45);
-            $table->string('nik', 45);
-            $table->text('foto');
-            $table->text('ktp');
-            $table->text('alamat');
+            $table->string('nama', 45)->nullable();
+            $table->string('nohp', 12)->nullable();
+            $table->string('email', 45)->nullable();
+            $table->string('nik', 45)->nullable();
+            $table->text('foto')->nullable();
+            $table->text('ktp')->nullable();
+            $table->text('alamat')->nullable();
             $table->integer('idusers');
             $table->timestamps();
         });

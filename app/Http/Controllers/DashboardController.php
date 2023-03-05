@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Controllers\Controller;
+use App\Models\Member;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
 class DashboardController extends Controller
 {
@@ -18,5 +19,19 @@ class DashboardController extends Controller
     public function create()
     {
         return view('dashboard.create');
+    }
+    public function data_member()
+    {
+        return view('dashboard.member',[
+            "database"=>Member::all()
+        ]);
+    }
+    public function data_mekanik()
+    {
+        return view('dashboard.mekanik');
+    }
+        public function data_kerusakan()
+    {
+        return view('dashboard.kerusakan');
     }
 }

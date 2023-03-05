@@ -97,7 +97,7 @@ body {
   text-align: var(--bs-body-text-align);
   background-color: var(--bs-body-bg);
   -webkit-text-size-adjust: 100%;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: rgba(255, 50, 50, 0);
 }
 
 hr {
@@ -2453,7 +2453,12 @@ progress {
     --bs-gutter-y: 16rem;
   }
 }
+.active1{
+background-color:#b1bbf1;
+opacity:20%;
+border-radius:10px;
 
+}
 .table {
   --bs-table-color: #67748e;
   --bs-table-bg: transparent;
@@ -24973,6 +24978,8 @@ p {
 
 .font-weight-bold {
   font-weight: 600 !important;
+  font-size: 150%;
+  font-family:cursive;
 }
 
 .font-weight-bolder {

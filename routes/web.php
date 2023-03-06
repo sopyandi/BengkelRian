@@ -4,7 +4,10 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\DeleteController;
+use App\Http\Controllers\MemberController;
 use App\Http\Controllers\UpdateController;
+use App\Http\Controllers\MekanikController;
 use App\Http\Controllers\DashboardController;
 use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 
@@ -31,23 +34,38 @@ route::controller(LoginController::class)->group(function () {
     Route::get('/register', 'register');
     Route::post('/logout', 'logout');
 });
-// ROUTE UNTUK MIDLEWARE AUTH DASHBOARD
-    Route::group(['middleware' =>'auth'],function(){
+//ROUTE UNTUK USERS
+route::controller(UserController::class)->group(function () {
+    Route::post('/create-user','create');
+});
+// ROUTE UNTUK DASHBOARD
+    Route::group(['middleware' => 'auth'],function(){
     route::controller(DashboardController::class)->group(function () {
     route::get('/dashboard','member');
     route::get('/admin', 'admin');
-    route::get('/member', 'data_member');
     route::get('/mekanik', 'data_mekanik');
     route::get('/kerusakan', 'data_kerusakan');
     route::get('/create/akun', 'create');
       });
     });
-// ROUTE UNTUK CREATE
-route::controller(UserController::class)->group(function () {
-    Route::post('/create-user', 'create');
 
+// ROUTE UNTUK MEMBER
+Route::group(['middleware' => 'auth'],function(){
+    route::controller(MemberController::class)->group(function () {
+        route::get('/member', 'data_member');
+        route::post('/update_member', 'update_member');
+        route::post('hapus_member', 'delete_member');
+        route::post('proses_update', 'proses_update');
+    });
 });
-//ROUTE UNTUK UPDATE
-route::controller(UpdateController::class)->group(function () {
-    route::get('/update-member/{id}', 'update_member');
+//ROUTE UNTUK MEKANIK
+Route::group(['middleware' => 'auth'],function(){
+    route::controller(MekanikController::class)->group(function () {
+        route::get('daftar_mekanik', 'daftar_mekanik');
+        route::post('create_mekanik', 'create_mekanik');
+        route::post('update_mekanik', 'update_mekanik');
+        // route::post('/update_member', 'update_member');
+        // route::post('hapus_member', 'delete_member');
+        // route::post('proses_update', 'proses_update');
+    });
 });

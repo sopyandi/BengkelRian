@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('username',40);
             $table->text('password');
             $table->enum('level', ['admin', 'member']);
+            $table->foreignId('member_id');
             $table->timestamps();
         });
     }

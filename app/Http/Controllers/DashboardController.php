@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Member;
+use App\Models\Mekanik;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -28,7 +29,9 @@ class DashboardController extends Controller
     }
     public function data_mekanik()
     {
-        return view('dashboard.mekanik');
+        return view('dashboard.mekanik',[
+            "database"=>Mekanik::all()
+        ]);
     }
         public function data_kerusakan()
     {

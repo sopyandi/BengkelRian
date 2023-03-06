@@ -20,10 +20,18 @@ class UserController extends Controller
        $id_user = User::create([
             'username' => $req->username,
             'password' => bcrypt($req->password),
-            'level' => 'member'
+            'level' => 'member',
+            'member_id' => 1
         ]);
         Member::create([
-            'idusers' => $id_user->id
+            'nama' =>'kosong',
+            'nohp' =>'kosong',
+            'email' =>'kosong',
+            'nik' =>'kosong',
+            'foto' =>'foto_profile/guest.png',
+            'ktp' =>'foto_ktp/ktp.png',
+            'alamat' =>'belum di isi',
+            'user_id' => $id_user->id
         ]);
         return redirect('/signin');
     }

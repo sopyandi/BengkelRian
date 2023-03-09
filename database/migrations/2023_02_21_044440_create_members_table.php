@@ -20,7 +20,7 @@ return new class extends Migration
             $table->text('foto')->nullable();
             $table->text('ktp')->nullable();
             $table->text('alamat')->nullable();
-            $table->foreignId('user_id');
+            $table->foreignId('user_id')->nullable();
             $table->timestamps();
         });
     }

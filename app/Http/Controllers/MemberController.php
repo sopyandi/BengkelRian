@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use App\Models\Member;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -27,7 +28,7 @@ class MemberController extends Controller
     }
     public function proses_update(Request $req){
     // return $req;
-    Member::where('id',$req->id)->update([
+     Member::where('id',$req->id)->update([
     'nama'=>$req->nama,
     'nohp'=>$req->nohp,
     'email'=>$req->email,
@@ -36,6 +37,9 @@ class MemberController extends Controller
     'ktp'=>$req->ktp,
     'alamat'=>$req->alamat,
     'user_id'=>$req->idusers
+    ]);
+    User::where('id',$req->idusers)->update([
+    'member_id' => $req->id
     ]);
     return redirect('/member');
     }

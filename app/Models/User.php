@@ -4,6 +4,7 @@ namespace App\Models;
 
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
 use App\Models\Member;
+use App\Models\Mekanik;
 use Laravel\Sanctum\HasApiTokens;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
@@ -22,8 +23,16 @@ class User extends Authenticatable
         'username',
         'password',
         'level',
+        'mekanik_id',
     ];
-
+    public function member()
+    {
+        return $this->belongsTo(Member::class);
+    }
+    public function mekanik()
+    {
+        return $this->belongsTo(Mekanik::class);
+    }
     /**
      * The attributes that should be hidden for serialization.
      *
@@ -42,8 +51,5 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
-    public function Member()
-    {
-        return $this->belongsTo(Member::class);
-    }
+
 }

@@ -1,6 +1,5 @@
 @extends('dashboard.layouts.main')
 @section('container')
-@if(Auth::user()->mekanik->statusAktivasi === '0')
 <form action="create_mekanik" class="mt-7 mx-5" method="post">
 @csrf
 <input name="id" type="hidden" value="">
@@ -45,5 +44,4 @@
     </div>
 </div>
 </form>
-@endif
 @endsection

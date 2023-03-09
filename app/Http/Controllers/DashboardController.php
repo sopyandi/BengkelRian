@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Member;
 use App\Models\Mekanik;
 use Illuminate\Http\Request;
+use App\Models\JenisKerusakan;
 use App\Http\Controllers\Controller;
 
 class DashboardController extends Controller
@@ -35,6 +36,8 @@ class DashboardController extends Controller
     }
         public function data_kerusakan()
     {
-        return view('dashboard.kerusakan');
+        return view('dashboard.kerusakan',[
+            'database' => JenisKerusakan::all()
+        ]);
     }
 }

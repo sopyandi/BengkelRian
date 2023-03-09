@@ -21,7 +21,8 @@ class UserController extends Controller
             'username' => $req->username,
             'password' => bcrypt($req->password),
             'level' => 'member',
-            'member_id' => 1
+            'mekanik_id' => '1'
+            // 'member_id' =>
         ]);
         Member::create([
             'nama' =>'kosong',

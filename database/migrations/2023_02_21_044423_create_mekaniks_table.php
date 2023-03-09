@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('nama', 45);
             $table->text('alamat');
             $table->enum('statusAktivasi', ['1', '0']);
-            $table->integer('idmember');
+            $table->foreignId('member_id')->nullable();
             $table->timestamps();
         });
     }

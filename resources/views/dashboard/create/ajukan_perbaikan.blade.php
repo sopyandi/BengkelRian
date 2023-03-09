@@ -19,7 +19,13 @@
     <div class="col-md-6">
         <div class="form-group">
             <label class="form-control-label" for="basic-url">Pelat nomor Mobil Anda</label>
-          <input name="pelat_nomor" type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
+          {{-- <input name="pelat_nomor" type="text" class="form-control" id="exampleFormControlInput1" placeholder=""> --}}
+          <select name="pelat_nomor" id="" class="form-control">
+            <option value=""></option>
+            @foreach($database_kerusakan as $data)
+            <option value="{{ $data->id }}">{{ $data->pelatnomor }}</option>
+            @endforeach
+          </select>
         </div>
       </div>
 </div>

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Kerusakan;
 use Illuminate\Http\Request;
 use App\Models\JenisKerusakan;
 use App\Models\DiagnosaKerusakan;
@@ -11,7 +12,8 @@ class DiagnosaKerusakanController extends Controller
 {
 public function ajukan_perbaikan(){
     return view('dashboard/create/ajukan_perbaikan',[
-    'database_jenis_kerusakan' => JenisKerusakan::all()
+    'database_jenis_kerusakan' => JenisKerusakan::all(),
+    'database_kerusakan' => Kerusakan::all()
 ]);
 }
 public function proses_tambah(Request $req){

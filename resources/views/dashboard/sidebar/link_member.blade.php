@@ -3,7 +3,7 @@
     <h6 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-6">Data Mobil Anda</h6>
 </li>
 <li class="nav-item">
-    <a class="nav-link {{Request::is('ajukan_perbaikan*') ? 'active' : ''}}" href="/s">
+    <a class="nav-link {{Request::is('data_mobil*') ? 'active' : ''}}" href="data_mobil">
         <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
             {{-- <i class="ni ni-zoom-split-in text-warning text-sm opacity-10"></i> --}}
             <i class="ni ni-ambulance text-primary text-sm opacity-10"></i>

@@ -9,7 +9,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 class Member extends Model
 {
     use HasFactory;
-    protected $guarded = ['idmember'];
+    protected $guarded = ['id'];
 
     public function User()
     {

@@ -18,10 +18,11 @@ class MekanikController extends Controller
  }
  public function create_mekanik(Request $req){
     // return $req;
+    $data = Member::where('id', auth()->user()->member->id)->first();
     $id_mekanik = Mekanik::create([
     'nama'=>$req->nama,
     'alamat'=>$req->alamat,
-    'member_id'=>$req->idmember,
+    'member_id'=>$data->id,
     'statusAktivasi'=>'0'
     ]);
     User::where('member_id',$req->idmember)->update([

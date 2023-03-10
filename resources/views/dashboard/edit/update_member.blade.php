@@ -71,6 +71,7 @@
 <div class="row">
     <div class="col-md-12">
         <input type="hidden" name="id" value="{{ $database->id }}">
+        <input type="hidden" name="id_user" value="{{ $database->User->id }}">
         <button class="btn btn-danger btn-lg w-100 " onclick="return confirm('Yakin Menghapus ?')">Delete Data</button>
     </div>
 </div>

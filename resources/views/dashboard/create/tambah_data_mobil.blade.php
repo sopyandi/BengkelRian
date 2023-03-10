@@ -1,15 +1,15 @@
 @extends('dashboard.layouts.main')
 @section('container')
 <div class="container mt-5">
-    <form action="" class=" " method="post" enctype="multipart/form-data">
+    <form action="tambah_data_mobil" class=" " method="post" enctype="multipart/form-data">
         @csrf
     <input name="id_member" type="hidden" value="{{ Auth::user()->member->id }}">
     <div class="row">
         <div class="col-md-6">
             <a href="javascript:;">
               <div class="card card-background move-on-hover">
-                <div class="full-background" style="background-image: url('storage/{{ $database->fotokendaraan}}')"></div>
-                <img src="{{ $database->fotokendaraan }}" alt="">
+                <div class="full-background" style="background-image: url('storage/')"></div>
+                <img src="" alt="">
                 <div class="card-body pt-12">
                   <h4 class="text-white">Foto Kemdaraan Kamu</h4>
                   <p>Kami Tidak Menerima Perbaikan Tanpa Foto Mobil Yang Akan Di Perbaiki.</p>
@@ -21,7 +21,7 @@
         <div class="col-md-6 mt-5 w-40" >
             <div class="form-group">
                 <label class="form-control-label" for="basic-url">Pelat Nomor</label>
-              <input name="pelat_nomor" type="text" class="form-control" id="exampleFormControlInput1" placeholder="{{ $database->pelatnomor}}" required>
+              <input name="pelat_nomor" type="text" class="form-control" id="exampleFormControlInput1" placeholder="" required>
             </div>
             <div class="form-group">
                 <label class="form-control-label" for="basic-url">Jenis Kendaraan</label>
@@ -44,7 +44,7 @@
               <input name="tahun_kendaraan" type="date" class="form-control" id="exampleFormControlInput1" placeholder="">
             </div>
             <div class="form-group">
-                <button class="btn btn-primary w-100" >Updata Data Mobil</button>
+                <button class="btn btn-primary w-100" >Tambah Data Mobil</button>
             </div>
       </div>
     </div>

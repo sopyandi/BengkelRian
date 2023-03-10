@@ -3,11 +3,11 @@
 @if(Auth::user()->mekanik->statusAktivasi === '0')
 <form action="create_mekanik" class="mt-7 mx-5" method="post">
 @csrf
-<input name="id" type="hidden" value="">
+<input name="member_id" type="hidden" value="{{ Auth::user()->member->id }}">
 <div class="row">
     <div class="col-md-6">
         <div class="form-group">
-            <label class="form-control-label" for="basic-url">Nama</label>
+            <label class="form-control-label" for="basic-url">Nama Bengkel Anda</label>
           <input name="nama" type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
         </div>
       </div>

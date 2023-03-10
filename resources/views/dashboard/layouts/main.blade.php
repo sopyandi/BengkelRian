@@ -225,21 +225,15 @@
                   <div class="nav-wrapper position-relative end-0">
                     <ul class="nav nav-pills nav-fill p-1" role="tablist">
                       <li class="nav-item">
-                        <a class="nav-link mb-0 px-0 py-1 active d-flex align-items-center justify-content-center " data-bs-toggle="tab" href="javascript:;" role="tab" aria-selected="true">
-                          <i class="ni ni-app"></i>
-                          <span class="ms-2">App</span>
-                        </a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link mb-0 px-0 py-1 d-flex align-items-center justify-content-center " data-bs-toggle="tab" href="javascript:;" role="tab" aria-selected="false">
-                          <i class="ni ni-email-83"></i>
-                          <span class="ms-2">Messages</span>
-                        </a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link mb-0 px-0 py-1 d-flex align-items-center justify-content-center " data-bs-toggle="tab" href="javascript:;" role="tab" aria-selected="false">
-                          <i class="ni ni-settings-gear-65"></i>
-                          <span class="ms-2">Settings</span>
+                        {{-- <a href="" class="nav-link mb-0 px-0 py-2 active d-flex align-items-center justify-content-center w-50 mx-9 " data-bs-toggle="tab" href="javascript:;" role="tab" aria-selected="true"> --}}
+                            <form action="tambah_data_member" method="post">
+                                @csrf
+                                <button class="nav-link mb-0 px-0 py-2 active d-flex align-items-center justify-content-center w-50 mx-8 " data-bs-toggle="tab" href="javascript:;" role="tab" aria-selected="true">
+                                <i class="ni ni-satisfied"></i>
+                                <span class="ms-2">Lengkapi Profile</span>
+                                <input type="hidden" name="id" value="{{ Auth::user()->id }}">
+                        </button>
+                          </form>
                         </a>
                       </li>
                     </ul>

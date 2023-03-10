@@ -53,6 +53,7 @@ route::controller(UserController::class)->group(function () {
 Route::group(['middleware' => 'auth'],function(){
     route::controller(MemberController::class)->group(function () {
     route::get('/member', 'data_member');
+    route::post('tambah_data_member', 'tambah_data_member');
     route::post('/update_member', 'update_member');
     route::post('hapus_member', 'delete_member');
     route::post('proses_update', 'proses_update');
@@ -78,7 +79,7 @@ Route::group(['middleware' => 'auth'],function(){
 Route::group(['middleware' => 'auth'],function(){
     route::controller(KerusakanController::class)->group(function () {
     route::get('data_mobil', 'data_mobil');
-    route::post('proses_update_data_mobil', 'proses_update');
+    route::post('tambah_data_mobil', 'proses_update');
     });
 });
 // ROUTE UNTUK DIAGNOSA KERUSAKAN (PERBAIKAN)

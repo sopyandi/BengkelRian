@@ -17,15 +17,13 @@ class MekanikController extends Controller
     ]);
  }
  public function create_mekanik(Request $req){
-    // return $req;
-    $data = Member::where('id', auth()->user()->member->id)->first();
     $id_mekanik = Mekanik::create([
     'nama'=>$req->nama,
     'alamat'=>$req->alamat,
-    'member_id'=>$data->id,
+    'member_id'=>$req->member_id,
     'statusAktivasi'=>'0'
     ]);
-    User::where('member_id',$req->idmember)->update([
+    User::where('id',Auth::user()->id)->update([
     'mekanik_id' => $id_mekanik->id
     ]);
     if(Auth::user()->level == 'admin'){

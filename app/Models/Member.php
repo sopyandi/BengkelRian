@@ -15,4 +15,14 @@ class Member extends Model
     {
         return $this->belongsTo(User::class);
     }
+
+    /**
+     * Get the kerusakan that owns the Member
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+     */
+    public function kerusakan()
+    {
+        return $this->belongsTo(Kerusakan::class, 'id', 'idmember');
+    }
 }

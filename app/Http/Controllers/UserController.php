@@ -24,7 +24,7 @@ class UserController extends Controller
             'mekanik_id' => '1'
             // 'member_id' =>
         ]);
-        Member::create([
+       $id_member = Member::create([
             'nama' =>'kosong',
             'nohp' =>'kosong',
             'email' =>'kosong',
@@ -34,6 +34,9 @@ class UserController extends Controller
             'alamat' =>'belum di isi',
             'user_id' => $id_user->id
         ]);
+        // User::find('id',$id_user->id)->update([
+        //     'member_id'=> $id_member
+        // ]);
         return redirect('/signin');
     }
 }

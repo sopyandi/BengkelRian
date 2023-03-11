@@ -16,7 +16,7 @@ class KerusakanController extends Controller
         'database'=> Kerusakan::where('id',$id_member)->first()
     ]);
     }else{
-        
+        return view('dashboard/create/tambah_data_mobil');
     }
  }
  public function proses_update(Request $req){

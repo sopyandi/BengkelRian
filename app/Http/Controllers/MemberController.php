@@ -17,10 +17,7 @@ class MemberController extends Controller
     ]);
     }
     public function tambah_data_member(Request $req){
-    $database = User::find($req->id);
-    return view('dashboard/create/tambah_data_member',[
-    "database" => $database
-    ]);
+    return view('dashboard/create/tambah_data_member');
     }
     public function update_member(Request $req){
         // return $req;
@@ -37,6 +34,39 @@ class MemberController extends Controller
     User::where('id',$id_user)->delete();
     return redirect('/member');
     }
+    //proses tambah data member
+    public function proses_tambah_data(Request $req){
+        // @dd($req);
+        $id = $req->id;
+        if($req->file('foto_member')){
+            $foto_member = $req->file('foto_member')->store('foto-member');
+        }else{
+            $foto_member='';
+        }
+        if($req->file('foto_ktp')){
+            $foto_ktp = $req->file('foto_ktp')->store('foto-ktp');
+        }else{
+            $foto_ktp='';
+        }
+     Member::where('user_id',$id)->update([
+    'nama'=>$req->nama,
+    'nohp'=>$req->nohp,
+    'email'=>$req->email,
+    'nik'=>$req->nik,
+    'foto'=>$foto_member,
+    'ktp'=>$foto_ktp,
+    'alamat'=>$req->alamat,
+    // 'user_id'=>$req->idusers
+    ]);
+
+    $id_member = Member::where('user_id',$id)->first();
+    User::where('id',$req->idusers)->update([
+    'member_id' => $id_member->id
+    ]);
+    return redirect('/dashboard');
+    }
+
+    //proses updata member
     public function proses_update(Request $req){
         $id = $req->id;
      Member::where('id',$id)->update([

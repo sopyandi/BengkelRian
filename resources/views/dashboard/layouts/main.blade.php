@@ -208,7 +208,12 @@
               <div class="row gx-4">
                 <div class="col-auto">
                   <div class="avatar avatar-xl position-relative">
+                    @if(Auth::user()->member != null)
+                    <img src="storage/{{ Auth::user()->member->foto }}" alt="profile_image" class="w-100 border-radius-lg shadow-sm">
+                    @endif
+                    @if(Auth::user()->member == null)
                     <img src="../assets/img/team-1.jpg" alt="profile_image" class="w-100 border-radius-lg shadow-sm">
+                    @endif
                   </div>
                 </div>
                 <div class="col-auto my-auto">

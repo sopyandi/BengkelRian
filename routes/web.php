@@ -56,6 +56,7 @@ Route::group(['middleware' => 'auth'],function(){
     route::post('tambah_data_member', 'tambah_data_member');
     route::post('/update_member', 'update_member');
     route::post('hapus_member', 'delete_member');
+    route::post('proses_tambah_data', 'proses_tambah_data');
     route::post('proses_update', 'proses_update');
     });
 });

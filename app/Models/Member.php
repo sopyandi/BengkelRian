@@ -23,6 +23,6 @@ class Member extends Model
      */
     public function kerusakan()
     {
-        return $this->belongsTo(Kerusakan::class, 'id', 'idmember');
+        return $this->belongsTo(Kerusakan::class, 'id', 'member_id');
     }
 }

@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('tipekendaraan', 45);
             $table->string('tahunkendaraan', 45);
             $table->text('fotokendaraan');
-            $table->integer('idmember');
+            $table->foreignId('member_id');
             $table->timestamps();
         });
     }

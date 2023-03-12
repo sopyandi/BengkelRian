@@ -9,5 +9,8 @@ class DiagnosaKerusakan extends Model
 {
     use HasFactory;
     protected $guarded = ['id'];
-
+    public function Kerusakan()
+    {
+        return $this->belongsTo(Kerusakan::class);
+    }
 }

@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('diagnosa_kerusakans', function (Blueprint $table) {
             $table->id('id');
             $table->integer('idjeniskerusakan');
-            $table->integer('idkerusakan');
+            $table->foreignId('kerusakan_id');
             $table->text('keterangan');
             $table->timestamps();
         });

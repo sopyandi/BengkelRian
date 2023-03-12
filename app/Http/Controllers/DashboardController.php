@@ -40,4 +40,8 @@ class DashboardController extends Controller
             'database' => JenisKerusakan::all()
         ]);
     }
+    public function intro()
+    {
+        return view('dashboard.intro');
+    }
 }

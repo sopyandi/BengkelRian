@@ -2,7 +2,7 @@
     <h6 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-6">Mekanik Pages</h6>
 </li>
 <li class="nav-item">
-    <a class="nav-link {{Request::is('daftar_mekanik*') ? '' : ''}}" href="daftar_mekanik">
+    <a class="nav-link {{Request::is('orderan*') ? 'active' : ''}}" href="orderan">
         <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
             {{-- <i class="ni ni-zoom-split-in text-warning text-sm opacity-10"></i> --}}
             {{-- <i class="ni ni-ambulance text-danger text-sm opacity-10"></i> --}}
@@ -13,7 +13,7 @@
     </a>
 </li>
 <li class="nav-item">
-    <a class="nav-link {{Request::is('daftar_mekanik*') ? '' : ''}}" href="daftar_mekanik">
+    <a class="nav-link {{Request::is('daftar_mekanik*') ? '' : ''}}" href="orderan">
         <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
             {{-- <i class="ni ni-zoom-split-in text-warning text-sm opacity-10"></i> --}}
             <i class="ni ni-credit-card text-success text-sm opacity-10"></i>

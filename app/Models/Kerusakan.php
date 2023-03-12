@@ -9,4 +9,8 @@ class Kerusakan extends Model
 {
     use HasFactory;
     protected $guarded = [];
+    public function Member()
+    {
+        return $this->belongsTo(Member::class);
+    }
 }

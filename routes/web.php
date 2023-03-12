@@ -46,6 +46,7 @@ route::controller(UserController::class)->group(function () {
     route::get('/mekanik', 'data_mekanik');
     route::get('/kerusakan', 'data_kerusakan');
     route::get('/create/akun', 'create');
+    route::get('/intro', 'intro');
       });
     });
 
@@ -87,6 +88,7 @@ Route::group(['middleware' => 'auth'],function(){
 Route::group(['middleware' => 'auth'],function(){
     route::controller(DiagnosaKerusakanController::class)->group(function () {
     route::get('ajukan_perbaikan', 'ajukan_perbaikan');
+    route::get('orderan', 'orderan');
     route::post('tambah_diagnosa_kerusakan', 'proses_tambah');
     });
 });

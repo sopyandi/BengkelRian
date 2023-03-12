@@ -20,9 +20,15 @@ public function proses_tambah(Request $req){
     // return $req;
     DiagnosaKerusakan::create([
         'idjeniskerusakan'=>$req->id_jenis_kerusakan,
-        'idkerusakan'=>$req->pelat_nomor,
+        'kerusakan_id'=>$req->pelat_nomor,
         'keterangan'=>$req->keterangan
     ]);
     return redirect('/dashboard');
+}
+public function orderan(){
+    $database = DiagnosaKerusakan::all();
+    return view('dashboard.mekanik.orderan',[
+        'database'=> $database
+    ]);
 }
 }

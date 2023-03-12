@@ -11,9 +11,9 @@ class KerusakanController extends Controller
 {
  public function data_mobil(){
     if(auth()->user()->member->kerusakan != null){
-    $id_member = Auth::user()->member->kerusakan->id;
+    $id = Auth::user()->member->kerusakan->id;
     return view('dashboard/edit/update_data_mobil',[
-        'database'=> Kerusakan::where('id',$id_member)->first()
+        'database'=> Kerusakan::where('id',$id)->first()
     ]);
     }else{
         return view('dashboard/create/tambah_data_mobil');
@@ -31,7 +31,7 @@ class KerusakanController extends Controller
     'tipekendaraan'=>$req->type_kendaraan,
     'tahunkendaraan'=>$req->tahun_kendaraan,
     'fotokendaraan'=>$foto_kendaraan,
-    'idmember'=>$req->id_member
+    'member_id'=>$req->id_member
     ]);
     return redirect('data_mobil');
  }

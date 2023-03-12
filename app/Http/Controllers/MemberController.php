@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\User;
 use App\Models\Member;
+use App\Models\Mekanik;
+use App\Models\Kerusakan;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -32,6 +34,8 @@ class MemberController extends Controller
     $id_user = $req->id_user;
     Member::where('id',$id)->delete();
     User::where('id',$id_user)->delete();
+    Mekanik::where('member_id',$id)->delete();
+    Kerusakan::where('idmember',$id)->delete();
     return redirect('/member');
     }
     //proses tambah data member

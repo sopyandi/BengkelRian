@@ -28,7 +28,7 @@
     </a>
 </li>
 @endif
-{{-- @if(auth()->user()->member->Kerusakan == null) --}}
+@if(auth()->user()->member != null)
 <li class="nav-item mt-3">
     <h6 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-6">member Pages</h6>
 </li>
@@ -42,7 +42,7 @@
         <span class="nav-link-text ms-1">Ajukan Perbaikan</span>
     </a>
 </li>
-{{-- @endif --}}
+@endif
 @if(auth()->user()->member != null)
 @if(auth()->user()->mekanik->member_id == null)
 <li class="nav-item">

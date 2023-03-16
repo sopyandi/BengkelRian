@@ -96,6 +96,7 @@ Route::group(['middleware' => 'auth'],function(){
 // ROUTE UNTUK PERBAIKAN
 Route::group(['middleware' => 'auth'],function(){
     route::controller(PerbaikanController::class)->group(function () {
-    route::get('ambil_orderan/{id}', 'perbaikan');
+    route::post('ambil_orderan', 'perbaikan');
+    route::post('tambah_perbaikan', 'tambah_perbaikan');
     });
 });

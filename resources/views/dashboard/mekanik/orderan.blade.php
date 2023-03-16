@@ -42,12 +42,15 @@
     <p>{{ $data->keterangan}}</p>
   </td>
   <td class="align-middle text-center">
-    <a href="ambil_orderan/{{ $data->Kerusakan->id}}" class="text-light font-weight-bold text-lg" data-toggle="tooltip" data-original-title="Edit user">
-        <button class="btn btn-icon btn-3 btn-success" type="button">
+    <form action="ambil_orderan" method="post">
+        @csrf
+        <input type="hidden" value="{{$data->Kerusakan->id}}" name="id">
+        <input type="hidden" value="{{$data->Kerusakan->id}}" name="kerusakan_id">
+        <button class="btn btn-icon btn-3 btn-success">
             <span class="btn-inner--icon"><i class="ni ni-button-play"></i></span>
-          <span class="btn-inner--text">Ambil</span>
-        </button>
-      </a>
+        <span class="btn-inner--text">Ambil</span>
+    </button>
+</form>
   </td>
 </tr>
 @endforeach

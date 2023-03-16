@@ -7,14 +7,22 @@ use Illuminate\Http\Request;
 use App\Models\JenisKerusakan;
 use App\Models\DiagnosaKerusakan;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Auth;
 
 class DiagnosaKerusakanController extends Controller
 {
 public function ajukan_perbaikan(){
+    if(DiagnosaKerusakan::where('kerusakan_id',Auth::user()->member->kerusakan->id)->first() == null){
     return view('dashboard/create/ajukan_perbaikan',[
     'database_jenis_kerusakan' => JenisKerusakan::all(),
     'database_kerusakan' => Kerusakan::all()
 ]);
+    }else{
+       $database = DiagnosaKerusakan::where('kerusakan_id',Auth::user()->member->kerusakan->id)->first();
+        return view('dashboard/proses/menunggu_penanganan',[
+            'database'=>$database
+        ]);
+    }
 }
 public function proses_tambah(Request $req){
     // return $req;
@@ -23,7 +31,7 @@ public function proses_tambah(Request $req){
         'kerusakan_id'=>$req->pelat_nomor,
         'keterangan'=>$req->keterangan
     ]);
-    return redirect('/dashboard');
+    return redirect('/ajukan_perbaikan');
 }
 public function orderan(){
     $database = DiagnosaKerusakan::all();

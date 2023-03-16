@@ -41,7 +41,7 @@
             </div>
             <div class="form-group">
                 <label class="form-control-label" for="basic-url">Tahun Kendaraan</label>
-              <input name="tahun_kendaraan" type="date" class="form-control" id="exampleFormControlInput1" placeholder="">
+              <input name="tahun_kendaraan" type="date" class="form-control" id="exampleFormControlInput1" placeholder="" required>
             </div>
             <div class="form-group">
                 <button class="btn btn-primary w-100" >Tambah Data Mobil</button>

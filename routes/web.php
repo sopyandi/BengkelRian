@@ -10,6 +10,7 @@ use App\Http\Controllers\UpdateController;
 use App\Http\Controllers\MekanikController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\KerusakanController;
+use App\Http\Controllers\PerbaikanController;
 use App\Http\Controllers\JenisKerusakanController;
 use App\Http\Controllers\DiagnosaKerusakanController;
 use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
@@ -90,5 +91,11 @@ Route::group(['middleware' => 'auth'],function(){
     route::get('ajukan_perbaikan', 'ajukan_perbaikan');
     route::get('orderan', 'orderan');
     route::post('tambah_diagnosa_kerusakan', 'proses_tambah');
+    });
+});
+// ROUTE UNTUK PERBAIKAN
+Route::group(['middleware' => 'auth'],function(){
+    route::controller(PerbaikanController::class)->group(function () {
+    route::get('ambil_orderan/{id}', 'perbaikan');
     });
 });

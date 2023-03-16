@@ -35,7 +35,7 @@ class MemberController extends Controller
     Member::where('id',$id)->delete();
     User::where('id',$id_user)->delete();
     Mekanik::where('member_id',$id)->delete();
-    Kerusakan::where('idmember',$id)->delete();
+    Kerusakan::where('member_id',$id)->delete();
     return redirect('/member');
     }
     //proses tambah data member

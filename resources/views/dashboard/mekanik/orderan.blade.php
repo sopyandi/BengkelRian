@@ -3,10 +3,6 @@
 <div class="container-fluid py-4">
 <div class="card">
 <div class="card-header pb-0">
-    {{-- <button class="btn btn-icon btn-3 btn-primary" type="button">
-        <span class="btn-inner--icon"><i class="ni ni-button-play"></i></span>
-      <span class="btn-inner--text">With icon</span>
-    </button> --}}
 <h6>Orderan</h6>
 </div>
 <div class="table-responsive">
@@ -15,8 +11,9 @@
 <tr>
   <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Pengaju Perbaikan</th>
   <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Foto Kendaraan</th>
+  <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Kerusakan</th>
   <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Keterangan</th>
-  <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Employed</th>
+  <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Mony</th>
   <th class="text-secondary opacity-7"></th>
 </tr>
 </thead>
@@ -38,32 +35,19 @@
     <img src="storage/{{ $data->Kerusakan->fotokendaraan}}" style="width:100px;border-radius:10px;">
   </td>
   <td>
+    <p>{{ $data->JenisKerusakan->jenisKerusakan}}</p>
+
+  </td>
+  <td>
     <p>{{ $data->keterangan}}</p>
   </td>
   <td class="align-middle text-center">
-    <span class="text-secondary text-xs font-weight-bold"></span>
-  </td>
-  <td class="align-middle">
-    <form action="update_member " method="post">
-        @csrf
-    {{-- <a href="{{ url('update_member').'/'.$data->id }}" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user"> --}}
-        <input type="hidden" name="id" value="{{ $data->id}}">
-        {{-- <button>d</button> --}}
-        <button class="btn btn-icon btn-2 btn-success py-1">
-            <div class="row">
-                <div class="col">
-                    <span class="btn-inner--icon"><i class="ni ni-bullet-list-67"></i></span>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <a href="#!" class="text-light font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
-                        Edit
-                      </a>
-                </div>
-            </div>
+    <a href="ambil_orderan/{{ $data->Kerusakan->id}}" class="text-light font-weight-bold text-lg" data-toggle="tooltip" data-original-title="Edit user">
+        <button class="btn btn-icon btn-3 btn-success" type="button">
+            <span class="btn-inner--icon"><i class="ni ni-button-play"></i></span>
+          <span class="btn-inner--text">Ambil</span>
         </button>
-    </form>
+      </a>
   </td>
 </tr>
 @endforeach

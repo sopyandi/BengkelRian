@@ -2,9 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Kontrak;
 use App\Models\Kerusakan;
 use App\Models\Perbaikan;
 use Illuminate\Http\Request;
+use App\Models\ProsesPerbaikan;
 use App\Models\DiagnosaKerusakan;
 use App\Http\Controllers\Controller;
 
@@ -21,7 +23,14 @@ class PerbaikanController extends Controller
  }
  public function tambah_perbaikan(Request $req){
     // return $req;
-    Perbaikan::create([
+    $perbaikan_id = Perbaikan::create([
+        'tanggal'=> '2020-03-03',
+        'statusperbaikan'=> 'proses',
+        'statuspembayaran'=>'belum bayar',
+        'idmekanik'=> $req->mekanik_id,
+        'idkerusakan'=> $req->kerusakan_id
+    ]);
+        Kontrak::create([
         'tanggal'=> '2020-03-03',
         'statusperbaikan'=> 'proses',
         'statuspembayaran'=>'belum bayar',

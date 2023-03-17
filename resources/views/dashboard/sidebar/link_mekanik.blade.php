@@ -13,6 +13,16 @@
     </a>
 </li>
 <li class="nav-item">
+    <a class="nav-link {{Request::is('kontrak*') ? 'active' : ''}}" href="kontrak">
+        <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+            {{-- <i class="ni ni-zoom-split-in text-warning text-sm opacity-10"></i> --}}
+            <i class="ni ni-briefcase-24 text-warning text-sm opacity-10"></i>
+
+        </div>
+        <span class="nav-link-text ms-1">Kontrak</span>
+    </a>
+</li>
+<li class="nav-item">
     <a class="nav-link {{Request::is('daftar_mekanik*') ? '' : ''}}" href="orderan">
         <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
             {{-- <i class="ni ni-zoom-split-in text-warning text-sm opacity-10"></i> --}}
@@ -22,3 +32,4 @@
         <span class="nav-link-text ms-1">Penghasilan</span>
     </a>
 </li>
+

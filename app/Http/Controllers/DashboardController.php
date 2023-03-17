@@ -12,6 +12,7 @@ class DashboardController extends Controller
 {
     public function member()
     {
+        
         return view('dashboard.dashboard');
     }
     public function admin()

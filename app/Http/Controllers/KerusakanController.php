@@ -19,7 +19,7 @@ class KerusakanController extends Controller
         return view('dashboard/create/tambah_data_mobil');
     }
  }
- public function proses_update(Request $req){
+ public function proses_tambah(Request $req){
     if($req->file('foto_kendaraan')){
         $foto_kendaraan = $req->file('foto_kendaraan')->store('foto-kendaraan');
     }else{
@@ -32,6 +32,23 @@ class KerusakanController extends Controller
     'tahunkendaraan'=>$req->tahun_kendaraan,
     'fotokendaraan'=>$foto_kendaraan,
     'member_id'=>$req->id_member
+    ]);
+    return redirect('data_mobil');
+ }
+ public function proses_update(Request $req){
+    // return $req;
+    if($req->file('foto_kendaraan')){
+        $foto_kendaraan = $req->file('foto_kendaraan')->store('foto-kendaraan');
+    }else{
+        $foto_kendaraan='';
+    }
+    Kerusakan::find($req->kerusakan_id)->update([
+    'pelatnomor'=>$req->pelat_nomor,
+    'jnskendaraan'=>$req->jenis_kendaraan,
+    'tipekendaraan'=>$req->type_kendaraan,
+    'tahunkendaraan'=>$req->tahun_kendaraan,
+    'fotokendaraan'=>$foto_kendaraan,
+    'member_id'=>$req->member_id
     ]);
     return redirect('data_mobil');
  }

@@ -4,15 +4,15 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\LoginController;
-use App\Http\Controllers\DeleteController;
 use App\Http\Controllers\MemberController;
-use App\Http\Controllers\UpdateController;
 use App\Http\Controllers\MekanikController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\DetailPerbaikanController;
 use App\Http\Controllers\KerusakanController;
 use App\Http\Controllers\PerbaikanController;
 use App\Http\Controllers\JenisKerusakanController;
 use App\Http\Controllers\DiagnosaKerusakanController;
+use App\Http\Controllers\KontrakController;
 use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 
 /*
@@ -60,6 +60,8 @@ Route::group(['middleware' => 'auth'],function(){
     route::post('hapus_member', 'delete_member');
     route::post('proses_tambah_data', 'proses_tambah_data');
     route::post('proses_update', 'proses_update');
+    route::get('topup', 'topup');
+    route::post('proses_topup', 'proses_topup');
     });
 });
 // ROUTE UNTUK MEKANIK
@@ -82,7 +84,8 @@ Route::group(['middleware' => 'auth'],function(){
 Route::group(['middleware' => 'auth'],function(){
     route::controller(KerusakanController::class)->group(function () {
     route::get('data_mobil', 'data_mobil');
-    route::post('tambah_data_mobil', 'proses_update');
+    route::post('tambah_data_mobil', 'proses_tambah');
+    route::post('update_data_mobil', 'proses_update');
     });
 });
 // ROUTE UNTUK DIAGNOSA KERUSAKAN (PERBAIKAN)
@@ -98,5 +101,19 @@ Route::group(['middleware' => 'auth'],function(){
     route::controller(PerbaikanController::class)->group(function () {
     route::post('ambil_orderan', 'perbaikan');
     route::post('tambah_perbaikan', 'tambah_perbaikan');
+    });
+});
+// ROUTE UNTUK DETAIL PERBAIKAN
+Route::group(['middleware' => 'auth'],function(){
+    route::controller(DetailPerbaikanController::class)->group(function () {
+    route::get('transaksi_member', 'transaksi_member');
+    route::post('bayar', 'bayar_perbaikan');
+    });
+});
+// ROUTE UNTUK PROSES PERBAIKAN
+Route::group(['middleware' => 'auth'],function(){
+    route::controller(KontrakController::class)->group(function () {
+        route::get('kontrak', 'kontrak');
+
     });
 });

@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id('id');
             $table->string('nama', 45)->nullable();
             $table->string('nohp', 12)->nullable();
+            $table->integer('saldo')->nullable();
             $table->string('email', 45)->nullable();
             $table->string('nik', 45)->nullable();
             $table->text('foto')->nullable();

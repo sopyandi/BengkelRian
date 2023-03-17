@@ -8,6 +8,7 @@ use App\Models\Mekanik;
 use App\Models\Kerusakan;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Auth;
 
 class MemberController extends Controller
 {
@@ -62,7 +63,6 @@ class MemberController extends Controller
     'alamat'=>$req->alamat,
     // 'user_id'=>$req->idusers
     ]);
-
     $id_member = Member::where('user_id',$id)->first();
     User::where('id',$req->idusers)->update([
     'member_id' => $id_member->id
@@ -87,5 +87,17 @@ class MemberController extends Controller
     'member_id' => $req->id
     ]);
     return redirect('/member');
+    }
+    public function topup(){
+        return view('dashboard/topup');
+    }
+    public function proses_topup(Request $req){
+        // return $req;
+        $saldo_dulu = Member::find(Auth::user()->member->id);
+        $saldo_sekarang = $saldo_dulu->saldo + $req->saldo;
+        Member::where('id',Auth::user()->member->id)->update([
+            'saldo' => $saldo_sekarang
+        ]);
+        return redirect('dashboard');
     }
 }

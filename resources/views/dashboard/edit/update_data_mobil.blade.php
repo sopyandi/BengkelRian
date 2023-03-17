@@ -1,9 +1,10 @@
 @extends('dashboard.layouts.main')
 @section('container')
 <div class="container mt-5">
-    <form action="" class=" " method="post" enctype="multipart/form-data">
+    <form action="update_data_mobil" class=" " method="post" enctype="multipart/form-data">
         @csrf
-    <input name="id_member" type="hidden" value="{{ Auth::user()->member->id }}">
+    <input name="kerusakan_id" type="hidden" value="{{ $database->id }}">
+    <input name="member_id" type="hidden" value="{{ Auth::user()->member->id }}">
     <div class="row">
         <div class="col-md-6">
             <a href="javascript:;">

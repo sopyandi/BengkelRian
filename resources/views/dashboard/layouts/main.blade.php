@@ -222,7 +222,14 @@
                       {{ Auth()->user()->username }}
                     </h5>
                     <p class="mb-0 font-weight-bold text-sm">
-                        {{ Auth()->user()->level }}
+                        {{-- {{ Auth()->user()->level }} --}}
+                        @if(Auth::user()->member != null )
+                         <p style="color:green;">Saldo : Rp.{{ Auth()->user()->member->saldo }},-  <a href="topup"><button class="btn btn-icon btn-3 btn-primary btn-sm" type="button">
+                          <span class="btn-inner--icon"><i class="ni ni-send"></i></span>
+                          <span class="btn-inner--text">TopUp</span>
+                        </button></p>
+                    </a>
+                        @endif
                     </p>
                   </div>
                 </div>

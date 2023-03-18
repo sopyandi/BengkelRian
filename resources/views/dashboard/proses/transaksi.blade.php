@@ -1,6 +1,50 @@
 @extends('dashboard.layouts.main')
 @section('container')
 {{-- {{ Auth::user()->member->kerusakan }} --}}
+<div class="container-fluid py-4">
+    <div class="card">
+    <div class="card-header pb-0">
+    <h6>Menunggu Respon Mekanik</h6>
+    </div>
+    <div class="table-responsive">
+    <table class="table align-items-center mb-0">
+    <thead>
+    <tr>
+      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Jenis Perbaikan</th>
+      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Keterangan</th>
+      <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Id Perbaikan</th>
+      <th class="text-secondary opacity-7"></th>
+    </tr>
+    </thead>
+    <tbody>
+        @foreach ($database_detail_perbaikan as $data )
+
+    <tr>
+      <td>
+        <p>{{ $data->jenisperbaikan }}</p>
+      </td>
+      <td>
+        <p>{{ $data->keterangan }}</p>
+      </td>
+      <td class="align-middle text-center">
+        <button class="btn btn-icon btn-2 btn-success py-1">
+            <div class="row">
+                <div class="col">
+                    <a href="#!" class="text-light font-weight-bold text-lg" data-toggle="tooltip" data-original-title="Edit user">
+                        Prosess
+                      </a>
+                </div>
+            </div>
+            </button>
+            <span class="text-secondary text-xs font-weight-bold"></span>
+        </td>
+    </tr>
+    @endforeach
+</tbody>
+</table>
+</div>
+</div>
+
 @if($database != null)
 <div class="container-fluid py-4">
     <div class="card">

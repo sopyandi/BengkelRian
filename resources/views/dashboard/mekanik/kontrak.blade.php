@@ -94,7 +94,7 @@
                         @csrf
                         <input type="hidden" value="{{Auth::user()->mekanik_id}}" name="mekanik_id">
                         <input type="hidden" value="{{ $database->id }}" name="kerusakan_id">
-                <button  class="btn btn-success btn-lg">Setujui Kontrak</button>
+                <button  class="btn btn-success btn-lg">Laporan ke pelanggan</button>
                     </form>
                 </div>
                 <div class="col"></div>

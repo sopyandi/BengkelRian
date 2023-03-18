@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('nominal', 45);
             $table->text('keterangan');
             $table->integer('idperbaikan');
+            $table->integer('member_id');
             $table->timestamps();
         });
     }
